@@ -26,17 +26,17 @@ namespace EShopService.Controllers
                 _creditCardService.ValidateCardNumber(cardNumber);
                 return Ok(new { cardProvider = _creditCardService.GetCardType(cardNumber) });
             }
-            catch(CardNumberTooLongException)
+            catch(CardNumberTooLongException ex)
             {
-                return StatusCode((int)HttpStatusCode.RequestUriTooLong, new { error = "The card number is too long", code = (int)HttpStatusCode.RequestUriTooLong });
+                return StatusCode((int)HttpStatusCode.RequestUriTooLong, new { error = ex.Message, code = (int)HttpStatusCode.RequestUriTooLong });
             }
-            catch(CardNumberTooShortException)
+            catch(CardNumberTooShortException ex)
             {
-                return BadRequest(new { error = "The card number is too short", code = (int)HttpStatusCode.BadRequest });
+                return BadRequest(new { error = ex.Message, code = (int)HttpStatusCode.BadRequest });
             }
-            catch(CardNumberInvalidException)
+            catch(CardNumberInvalidException ex)
             {
-                return BadRequest(new { error = "Invalid card number", code = (int)HttpStatusCode.BadRequest });
+                return BadRequest(new { error = ex.Message, code = (int)HttpStatusCode.BadRequest });
             }
         }
     }
