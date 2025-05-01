@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Application", "..\ESh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Application.Tests", "..\EShop.Application.Tests\EShop.Application.Tests.csproj", "{87359425-C69A-400A-A0D0-904FC2C8C916}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Domain", "..\EShop.Domain\EShop.Domain.csproj", "{E80E6D40-C53C-411F-97B8-594A97C9CC2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Domain.Tests", "..\EShop.Domain.Tests\EShop.Domain.Tests.csproj", "{DE4F662C-2D64-4984-AD51-EA609AA08483}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{87359425-C69A-400A-A0D0-904FC2C8C916}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87359425-C69A-400A-A0D0-904FC2C8C916}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87359425-C69A-400A-A0D0-904FC2C8C916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E80E6D40-C53C-411F-97B8-594A97C9CC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80E6D40-C53C-411F-97B8-594A97C9CC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E80E6D40-C53C-411F-97B8-594A97C9CC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80E6D40-C53C-411F-97B8-594A97C9CC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE4F662C-2D64-4984-AD51-EA609AA08483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4F662C-2D64-4984-AD51-EA609AA08483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4F662C-2D64-4984-AD51-EA609AA08483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4F662C-2D64-4984-AD51-EA609AA08483}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
